@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <title>Admin Dashboard - Parenting Bliss</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'premier-navy': '#1a2332',
+                        'premier-coral': '#e87a5e',
+                        'premier-cream': '#f5f3f0',
+                        'premier-gold': '#d4af37',
+                        'primary': '#e87a5e',
+                        'secondary': '#1a2332',
+                        'accent': '#d4af37',
+                    },
+                    fontFamily: {
+                        'heading': ['Cormorant Garamond', 'serif'],
+                        'body': ['Work Sans', 'sans-serif'],
+                        'accent': ['DM Serif Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center flex-1 min-w-0">
+                    <a href="index.html" class="text-xl sm:text-2xl lg:text-3xl font-heading font-bold gradient-text truncate">Parenting Bliss</a>
+                    <span class="ml-2 sm:ml-4 px-2 sm:px-3 py-1 bg-pink-100 text-pink-600 rounded-full text-xs sm:text-sm font-semibold whitespace-nowrap">Admin</span>
+                </div>
+                <div class="hidden lg:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-pink-500 font-medium transition">View Site</a>
+                    <a href="admin-dashboard.html" class="text-pink-500 font-medium border-b-2 border-pink-500">Dashboard</a>
+                    <a href="users.html" class="text-gray-700 hover:text-pink-500 font-medium transition">Users</a>
+                    <a href="#" id="logout-btn" class="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded-lg font-semibold transition">Logout</a>
+                </div>
+                <button id="mobile-menu-btn" class="lg:hidden text-gray-700">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-t">
+            <div class="px-4 py-4 space-y-3">
+                <a href="index.html" class="block text-gray-700 hover:text-pink-500">View Site</a>
+                <a href="admin-dashboard.html" class="block text-pink-500 font-semibold">Dashboard</a>
+                <a href="blog.html" class="block text-gray-700 hover:text-pink-500">Posts</a>
+                <a href="users.html" class="block text-gray-700 hover:text-pink-500">Users</a>
+                <a href="#" id="logout-btn-mobile" class="block bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded-lg text-center font-semibold transition mt-3">Logout</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Dashboard Header -->
+    <section class="bg-gradient-to-br from-pink-50 via-purple-50 to-pink-50 py-8 md:py-10 lg:py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h1 class="text-2xl md:text-3xl lg:text-4xl font-heading font-bold text-gray-800 mb-2">Admin Dashboard</h1>
+            <p class="text-sm md:text-base text-gray-600">Manage your blog content, users, and settings</p>
+        </div>
+    </section>
+
+    <!-- Stats Cards -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8">
+        <div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
+            <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow p-5 md:p-6">
+                <div class="flex items-center justify-between mb-3">
+                    <div class="flex-1 min-w-0">
+                        <p class="text-gray-600 text-xs md:text-sm mb-1.5">Total Posts</p>
+                        <p class="text-2xl md:text-3xl lg:text-3xl font-bold text-gray-800">247</p>
+                    </div>
+                    <div class="w-12 h-12 md:w-14 md:h-14 bg-gradient-to-br from-pink-400 to-purple-500 rounded-lg flex items-center justify-center flex-shrink-0 ml-3 shadow-sm">
+                        <svg class="w-6 h-6 md:w-7 md:h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                        </svg>
+                    </div>
+                </div>
+                <p class="text-xs md:text-sm text-green-600 font-medium">+12 this month</p>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow p-5 md:p-6">
+                <div class="flex items-center justify-between mb-3">
+                    <div class="flex-1 min-w-0">
+                        <p class="text-gray-600 text-xs md:text-sm mb-1.5">Total Users</p>
+                        <p class="text-2xl md:text-3xl lg:text-3xl font-bold text-gray-800">1,284</p>
+                    </div>
+                    <div class="w-12 h-12 md:w-14 md:h-14 bg-gradient-to-br from-blue-400 to-blue-600 rounded-lg flex items-center justify-center flex-shrink-0 ml-3 shadow-sm">
+                        <svg class="w-6 h-6 md:w-7 md:h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                        </svg>
+                    </div>
+                </div>
+                <p class="text-xs md:text-sm text-green-600 font-medium">+28 this month</p>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow p-5 md:p-6">
+                <div class="flex items-center justify-between mb-3">
+                    <div class="flex-1 min-w-0">
+                        <p class="text-gray-600 text-xs md:text-sm mb-1.5">Comments</p>
+                        <p class="text-2xl md:text-3xl lg:text-3xl font-bold text-gray-800">3,421</p>
+                    </div>
+                    <div class="w-12 h-12 md:w-14 md:h-14 bg-gradient-to-br from-green-400 to-green-600 rounded-lg flex items-center justify-center flex-shrink-0 ml-3 shadow-sm">
+                        <svg class="w-6 h-6 md:w-7 md:h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
+                        </svg>
+                    </div>
+                </div>
+                <p class="text-xs md:text-sm text-green-600 font-medium">+156 this month</p>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow p-5 md:p-6">
+                <div class="flex items-center justify-between mb-3">
+                    <div class="flex-1 min-w-0">
+                        <p class="text-gray-600 text-xs md:text-sm mb-1.5">Categories</p>
+                        <p class="text-2xl md:text-3xl lg:text-3xl font-bold text-gray-800">12</p>
+                    </div>
+                    <div class="w-12 h-12 md:w-14 md:h-14 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-lg flex items-center justify-center flex-shrink-0 ml-3 shadow-sm">
+                        <svg class="w-6 h-6 md:w-7 md:h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z"></path>
+                        </svg>
+                    </div>
+                </div>
+                <p class="text-xs md:text-sm text-gray-600 font-medium">Active categories</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-6 lg:gap-8">
+            <!-- Blog Posts Management -->
+            <div class="md:col-span-2">
+                <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow">
+                    <div class="p-5 md:p-6 border-b border-gray-200 flex flex-col md:flex-row md:justify-between md:items-center gap-3">
+                        <h2 class="text-xl md:text-2xl font-heading font-bold text-gray-800">Recent Blog Posts</h2>
+                        <button class="bg-gradient-to-r from-pink-500 to-purple-500 text-white px-5 py-2.5 rounded-lg font-semibold hover:shadow-lg transition text-sm md:text-base w-full md:w-auto">
+                            + New Post
+                        </button>
+                    </div>
+                    <!-- Desktop & Tablet Table View -->
+                    <div class="hidden md:block overflow-x-auto">
+                        <table class="w-full">
+                            <thead class="bg-gray-50">
+                                <tr>
+                                    <th class="px-4 md:px-5 lg:px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Title</th>
+                                    <th class="px-4 md:px-5 lg:px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Category</th>
+                                    <th class="px-4 md:px-5 lg:px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Status</th>
+                                    <th class="px-4 md:px-5 lg:px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider hidden lg:table-cell">Date</th>
+                                    <th class="px-4 md:px-5 lg:px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody class="bg-white divide-y divide-gray-200">
+                                <tr class="hover:bg-gray-50 transition-colors">
+                                    <td class="px-4 md:px-5 lg:px-6 py-4">
+                                        <div class="text-sm font-medium text-gray-900">10 Essential Tips for New Parents</div>
+                                        <div class="text-xs text-gray-500 mt-1 lg:hidden">March 20, 2024</div>
+                                    </td>
+                                    <td class="px-4 md:px-5 lg:px-6 py-4">
+                                        <span class="px-2 py-1 text-xs font-semibold rounded-full bg-pink-100 text-pink-800">Newborn</span>
+                                    </td>
+                                    <td class="px-4 md:px-5 lg:px-6 py-4">
+                                        <span class="px-2 py-1 text-xs font-semibold rounded-full bg-green-100 text-green-800">Published</span>
+                                    </td>
+                                    <td class="px-4 md:px-5 lg:px-6 py-4 text-sm text-gray-500 hidden lg:table-cell">March 20, 2024</td>
+                                    <td class="px-4 md:px-5 lg:px-6 py-4 text-sm font-medium space-x-2">
+                                        <a href="blog-detail.html" class="text-blue-600 hover:text-blue-900 hover:underline">Edit</a>
+                                        <a href="#" class="text-red-600 hover:text-red-900 hover:underline">Delete</a>
+                                    </td>
+                                </tr>
+                                <tr class="hover:bg-gray-50 transition-colors">
+                                    <td class="px-4 md:px-5 lg:px-6 py-4">
+                                        <div class="text-sm font-medium text-gray-900">Toddler Tantrums: A Parent's Guide</div>
+                                        <div class="text-xs text-gray-500 mt-1 lg:hidden">March 18, 2024</div>
+                                    </td>
+                                    <td class="px-4 md:px-5 lg:px-6 py-4">
+                                        <span class="px-2 py-1 text-xs font-semibold rounded-full bg-purple-100 text-purple-800">Toddler</span>
+                                    </td>
+                                    <td class="px-4 md:px-5 lg:px-6 py-4">
+                                        <span class="px-2 py-1 text-xs font-semibold rounded-full bg-green-100 text-green-800">Published</span>
+                                    </td>
+                                    <td class="px-4 md:px-5 lg:px-6 py-4 text-sm text-gray-500 hidden lg:table-cell">March 18, 2024</td>
+                                    <td class="px-4 md:px-5 lg:px-6 py-4 text-sm font-medium space-x-2">
+                                        <a href="#" class="text-blue-600 hover:text-blue-900 hover:underline">Edit</a>
+                                        <a href="#" class="text-red-600 hover:text-red-900 hover:underline">Delete</a>
+                                    </td>
+                                </tr>
+                                <tr class="hover:bg-gray-50 transition-colors">
+                                    <td class="px-4 md:px-5 lg:px-6 py-4">
+                                        <div class="text-sm font-medium text-gray-900">School Readiness Checklist</div>
+                                        <div class="text-xs text-gray-500 mt-1 lg:hidden">March 15, 2024</div>
+                                    </td>
+                                    <td class="px-4 md:px-5 lg:px-6 py-4">
+                                        <span class="px-2 py-1 text-xs font-semibold rounded-full bg-yellow-100 text-yellow-800">Preschool</span>
+                                    </td>
+                                    <td class="px-4 md:px-5 lg:px-6 py-4">
+                                        <span class="px-2 py-1 text-xs font-semibold rounded-full bg-yellow-100 text-yellow-800">Draft</span>
+                                    </td>
+                                    <td class="px-4 md:px-5 lg:px-6 py-4 text-sm text-gray-500 hidden lg:table-cell">March 15, 2024</td>
+                                    <td class="px-4 md:px-5 lg:px-6 py-4 text-sm font-medium space-x-2">
+                                        <a href="#" class="text-blue-600 hover:text-blue-900 hover:underline">Edit</a>
+                                        <a href="#" class="text-red-600 hover:text-red-900 hover:underline">Delete</a>
+                                    </td>
+                                </tr>
+                                <tr class="hover:bg-gray-50 transition-colors">
+                                    <td class="px-4 md:px-5 lg:px-6 py-4">
+                                        <div class="text-sm font-medium text-gray-900">Building Strong Relationships with Teens</div>
+                                        <div class="text-xs text-gray-500 mt-1 lg:hidden">March 12, 2024</div>
+                                    </td>
+                                    <td class="px-4 md:px-5 lg:px-6 py-4">
+                                        <span class="px-2 py-1 text-xs font-semibold rounded-full bg-blue-100 text-blue-800">School Age</span>
+                                    </td>
+                                    <td class="px-4 md:px-5 lg:px-6 py-4">
+                                        <span class="px-2 py-1 text-xs font-semibold rounded-full bg-green-100 text-green-800">Published</span>
+                                    </td>
+                                    <td class="px-4 md:px-5 lg:px-6 py-4 text-sm text-gray-500 hidden lg:table-cell">March 12, 2024</td>
+                                    <td class="px-4 md:px-5 lg:px-6 py-4 text-sm font-medium space-x-2">
+                                        <a href="#" class="text-blue-600 hover:text-blue-900 hover:underline">Edit</a>
+                                        <a href="#" class="text-red-600 hover:text-red-900 hover:underline">Delete</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- Mobile Card View -->
+                    <div class="md:hidden divide-y divide-gray-200">
+                        <div class="p-4">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="text-sm font-semibold text-gray-900 flex-1">10 Essential Tips for New Parents</h3>
+                                <span class="px-2 py-1 text-xs font-semibold rounded-full bg-green-100 text-green-800 ml-2">Published</span>
+                            </div>
+                            <div class="flex flex-wrap gap-2 mb-3">
+                                <span class="px-2 py-1 text-xs font-semibold rounded-full bg-pink-100 text-pink-800">Newborn</span>
+                                <span class="text-xs text-gray-500">March 20, 2024</span>
+                            </div>
+                            <div class="flex space-x-3">
+                                <a href="blog-detail.html" class="text-sm text-blue-600 hover:text-blue-900 font-medium">Edit</a>
+                                <a href="#" class="text-sm text-red-600 hover:text-red-900 font-medium">Delete</a>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="text-sm font-semibold text-gray-900 flex-1">Toddler Tantrums: A Parent's Guide</h3>
+                                <span class="px-2 py-1 text-xs font-semibold rounded-full bg-green-100 text-green-800 ml-2">Published</span>
+                            </div>
+                            <div class="flex flex-wrap gap-2 mb-3">
+                                <span class="px-2 py-1 text-xs font-semibold rounded-full bg-purple-100 text-purple-800">Toddler</span>
+                                <span class="text-xs text-gray-500">March 18, 2024</span>
+                            </div>
+                            <div class="flex space-x-3">
+                                <a href="#" class="text-sm text-blue-600 hover:text-blue-900 font-medium">Edit</a>
+                                <a href="#" class="text-sm text-red-600 hover:text-red-900 font-medium">Delete</a>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="text-sm font-semibold text-gray-900 flex-1">School Readiness Checklist</h3>
+                                <span class="px-2 py-1 text-xs font-semibold rounded-full bg-yellow-100 text-yellow-800 ml-2">Draft</span>
+                            </div>
+                            <div class="flex flex-wrap gap-2 mb-3">
+                                <span class="px-2 py-1 text-xs font-semibold rounded-full bg-yellow-100 text-yellow-800">Preschool</span>
+                                <span class="text-xs text-gray-500">March 15, 2024</span>
+                            </div>
+                            <div class="flex space-x-3">
+                                <a href="#" class="text-sm text-blue-600 hover:text-blue-900 font-medium">Edit</a>
+                                <a href="#" class="text-sm text-red-600 hover:text-red-900 font-medium">Delete</a>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="text-sm font-semibold text-gray-900 flex-1">Building Strong Relationships with Teens</h3>
+                                <span class="px-2 py-1 text-xs font-semibold rounded-full bg-green-100 text-green-800 ml-2">Published</span>
+                            </div>
+                            <div class="flex flex-wrap gap-2 mb-3">
+                                <span class="px-2 py-1 text-xs font-semibold rounded-full bg-blue-100 text-blue-800">School Age</span>
+                                <span class="text-xs text-gray-500">March 12, 2024</span>
+                            </div>
+                            <div class="flex space-x-3">
+                                <a href="#" class="text-sm text-blue-600 hover:text-blue-900 font-medium">Edit</a>
+                                <a href="#" class="text-sm text-red-600 hover:text-red-900 font-medium">Delete</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-4 sm:p-6 border-t border-gray-200">
+                        <a href="blog.html" class="text-pink-500 font-semibold hover:underline text-sm sm:text-base">View All Posts →</a>
+                    </div>
+                </div>
+
+                <!-- Comments Management -->
+                <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow mt-6 md:mt-6 lg:mt-8">
+                    <div class="p-5 md:p-6 border-b border-gray-200">
+                        <h2 class="text-xl md:text-2xl font-heading font-bold text-gray-800">Recent Comments</h2>
+                    </div>
+                    <div class="p-5 md:p-6 space-y-4">
+                        <div class="border-l-4 border-pink-500 pl-4 py-2">
+                            <div class="flex justify-between items-start mb-2">
+                                <div>
+                                    <p class="font-semibold text-gray-800">Sarah M.</p>
+                                    <p class="text-sm text-gray-600">on "10 Essential Tips for New Parents"</p>
+                                </div>
+                                <span class="text-xs text-gray-500">2 hours ago</span>
+                            </div>
+                            <p class="text-gray-700">Great article! These tips were so helpful for me as a new mom.</p>
+                            <div class="mt-2 space-x-2">
+                                <button class="text-sm text-green-600 hover:underline">Approve</button>
+                                <button class="text-sm text-red-600 hover:underline">Delete</button>
+                            </div>
+                        </div>
+                        <div class="border-l-4 border-pink-500 pl-4 py-2">
+                            <div class="flex justify-between items-start mb-2">
+                                <div>
+                                    <p class="font-semibold text-gray-800">Michael T.</p>
+                                    <p class="text-sm text-gray-600">on "Toddler Tantrums: A Parent's Guide"</p>
+                                </div>
+                                <span class="text-xs text-gray-500">5 hours ago</span>
+                            </div>
+                            <p class="text-gray-700">Thank you for sharing these strategies. They really work!</p>
+                            <div class="mt-2 space-x-2">
+                                <button class="text-sm text-green-600 hover:underline">Approve</button>
+                                <button class="text-sm text-red-600 hover:underline">Delete</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sidebar -->
+            <div class="space-y-6 md:space-y-6 lg:space-y-8">
+                <!-- Categories Management -->
+                <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow">
+                    <div class="p-5 md:p-6 border-b border-gray-200 flex justify-between items-center">
+                        <h2 class="text-lg md:text-xl font-heading font-bold text-gray-800">Categories</h2>
+                        <button class="text-pink-500 hover:text-pink-600 text-sm md:text-base font-semibold">+ Add</button>
+                    </div>
+                    <div class="p-5 md:p-6 space-y-3">
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-center">
+                                <div class="w-3 h-3 bg-pink-500 rounded-full mr-3"></div>
+                                <span class="text-gray-800">Newborn</span>
+                            </div>
+                            <span class="text-sm text-gray-500">45 posts</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-center">
+                                <div class="w-3 h-3 bg-purple-500 rounded-full mr-3"></div>
+                                <span class="text-gray-800">Toddler</span>
+                            </div>
+                            <span class="text-sm text-gray-500">62 posts</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-center">
+                                <div class="w-3 h-3 bg-yellow-500 rounded-full mr-3"></div>
+                                <span class="text-gray-800">Preschool</span>
+                            </div>
+                            <span class="text-sm text-gray-500">38 posts</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-center">
+                                <div class="w-3 h-3 bg-blue-500 rounded-full mr-3"></div>
+                                <span class="text-gray-800">School Age</span>
+                            </div>
+                            <span class="text-sm text-gray-500">52 posts</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Actions -->
+                <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow">
+                    <div class="p-5 md:p-6 border-b border-gray-200">
+                        <h2 class="text-lg md:text-xl font-heading font-bold text-gray-800">Quick Actions</h2>
+                    </div>
+                    <div class="p-5 md:p-6 space-y-3">
+                        <a href="users.html" class="block w-full bg-gradient-to-r from-pink-500 to-purple-500 text-white px-4 py-3 rounded-lg font-semibold text-center hover:shadow-lg transition text-sm md:text-base">
+                            Manage Users
+                        </a>
+                        <button class="block w-full bg-gray-100 text-gray-800 px-4 py-3 rounded-lg font-semibold hover:bg-gray-200 transition text-sm md:text-base">
+                            Settings
+                        </button>
+                        <button class="block w-full bg-gray-100 text-gray-800 px-4 py-3 rounded-lg font-semibold hover:bg-gray-200 transition text-sm md:text-base">
+                            Analytics
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-300 py-8 mt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p>&copy; 2025 Parenting Bliss. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
+
+

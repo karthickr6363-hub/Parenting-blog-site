@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <title>Login - Parenting Bliss</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'premier-navy': '#1a2332',
+                        'premier-coral': '#e87a5e',
+                        'premier-cream': '#f5f3f0',
+                        'premier-gold': '#d4af37',
+                        'primary': '#e87a5e',
+                        'secondary': '#1a2332',
+                        'accent': '#d4af37',
+                    },
+                    fontFamily: {
+                        'heading': ['Cormorant Garamond', 'serif'],
+                        'body': ['Work Sans', 'sans-serif'],
+                        'accent': ['DM Serif Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <!-- Brand Name -->
+    <div class="pt-8 pb-4 text-center">
+        <a href="index.html" class="text-3xl font-heading font-bold gradient-text inline-block hover:opacity-80 transition">
+            Parenting Bliss
+        </a>
+    </div>
+
+    <!-- Login Section -->
+    <section class="min-h-screen flex items-center justify-center py-4 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-md w-full space-y-8">
+            <div class="bg-white rounded-2xl shadow-xl p-8">
+                <div class="text-center mb-6">
+                    <h2 class="text-4xl font-heading font-bold text-premier-navy mb-2 fade-in-up">
+                        Welcome <span class="gradient-text">Back</span>
+                    </h2>
+                    <p class="text-premier-navy/70 fade-in-up animate-delay-200">Sign in to your account to continue</p>
+                </div>
+                <form id="login-form" class="space-y-6">
+                    <div>
+                        <label for="email" class="block text-premier-navy font-semibold mb-2">Email Address</label>
+                        <input 
+                            type="email" 
+                            id="email" 
+                            name="email" 
+                            required
+                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-premier-coral focus:border-transparent"
+                            placeholder="your.email@example.com"
+                        >
+                    </div>
+
+                    <div>
+                        <label for="password" class="block text-premier-navy font-semibold mb-2">Password</label>
+                        <input 
+                            type="password" 
+                            id="password" 
+                            name="password" 
+                            required
+                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-premier-coral focus:border-transparent"
+                            placeholder="Enter your password"
+                        >
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center">
+                            <input 
+                                id="remember-me" 
+                                name="remember-me" 
+                                type="checkbox" 
+                                class="h-4 w-4 text-pink-500 focus:ring-pink-500 border-gray-300 rounded"
+                            >
+                            <label for="remember-me" class="ml-2 block text-sm text-premier-navy">
+                                Remember me
+                            </label>
+                        </div>
+                        <div class="text-sm">
+                            <a href="#" class="text-premier-coral hover:text-premier-coral/80 font-semibold transition">
+                                Forgot password?
+                            </a>
+                        </div>
+                    </div>
+
+                    <button 
+                        type="submit" 
+                        class="w-full btn-primary text-white px-6 py-4 rounded-lg text-lg font-semibold"
+                    >
+                        Sign In
+                    </button>
+                </form>
+
+                <div class="mt-6">
+                    <div class="relative">
+                        <div class="absolute inset-0 flex items-center">
+                            <div class="w-full border-t border-gray-300"></div>
+                        </div>
+                        <div class="relative flex justify-center text-sm">
+                            <span class="px-2 bg-white text-gray-500">Or continue with</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-6 grid grid-cols-2 gap-3">
+                        <button class="w-full inline-flex justify-center py-3 px-4 border border-gray-300 rounded-lg shadow-sm bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 transition">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
+                                <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+                                <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/>
+                                <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
+                            </svg>
+                        </button>
+                        <button class="w-full inline-flex justify-center py-3 px-4 border border-gray-300 rounded-lg shadow-sm bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 transition">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <p class="mt-6 text-center text-sm text-premier-navy/70">
+                    Don't have an account? 
+                    <a href="register.html" class="text-premier-coral hover:text-premier-coral/80 font-semibold transition">
+                        Sign up here
+                    </a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/main.js"></script>
+    <script>
+        // Login form handler
+        document.getElementById('login-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // In a real application, this would send data to a server
+            alert('Login functionality would be implemented here. Redirecting to dashboard...');
+            window.location.href = 'admin-dashboard.html';
+        });
+    </script>
+</body>
+</html>
+

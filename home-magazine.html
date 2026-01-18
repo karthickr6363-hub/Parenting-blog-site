@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <title>Parenting Bliss - Magazine Layout</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'premier-navy': '#1a2332',
+                        'premier-coral': '#e87a5e',
+                        'premier-cream': '#f5f3f0',
+                        'premier-gold': '#d4af37',
+                        'primary': '#e87a5e',
+                        'secondary': '#1a2332',
+                        'accent': '#d4af37',
+                    },
+                    fontFamily: {
+                        'heading': ['Cormorant Garamond', 'serif'],
+                        'body': ['Work Sans', 'sans-serif'],
+                        'accent': ['DM Serif Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white">
+     <!-- Navigation -->
+     <nav class="bg-white shadow-lg sticky top-0 z-50 backdrop-blur-sm bg-white/95">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center">
+                    <a href="index.html" class="text-3xl font-heading font-bold gradient-text">Parenting Bliss</a>
+                </div>
+                <div class="hidden lg:flex items-center space-x-8">
+                    <div class="dropdown relative">
+                        <button id="home-menu-btn" class="text-premier-navy hover:text-premier-coral font-medium transition flex items-center">
+                            Home
+                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div id="home-dropdown" class="dropdown-content">
+                            <a href="index.html" class="block px-4 py-2 text-premier-navy hover:bg-premier-cream hover:text-premier-coral transition">Home</a>
+                            <a href="home-magazine.html" class="block px-4 py-2 text-premier-navy hover:bg-premier-cream hover:text-premier-coral transition">Magazine</a>
+                        </div>
+                    </div>
+                    <a href="categories.html" class="text-premier-navy hover:text-premier-coral font-medium transition">Categories</a>
+                    <a href="blog.html" class="text-premier-navy hover:text-premier-coral font-medium transition">Blog</a>
+                    <a href="about.html" class="text-premier-navy hover:text-premier-coral font-medium transition">About</a>
+                    <a href="contact.html" class="text-premier-navy hover:text-premier-coral font-medium transition">Contact</a>
+                    <div class="flex items-center space-x-3">
+                        <a href="login.html" class="btn-secondary px-4 py-2 rounded-lg font-semibold transition">Login</a>
+                        <a href="register.html" class="btn-primary px-4 py-2 rounded-lg font-semibold transition">Register</a>
+                    </div>
+                    <a href="admin-dashboard.html" class="bg-gradient-to-r from-premier-coral to-premier-gold text-white px-4 py-2 rounded-lg hover:shadow-lg transition">Admin</a>
+                </div>
+                <button id="mobile-menu-btn" class="lg:hidden text-premier-navy">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-premier-cream">
+            <div class="px-4 py-4 space-y-3">
+                <div class="border-b border-premier-cream pb-2 mb-2">
+                    <p class="text-premier-navy text-sm font-semibold mb-2">Home</p>
+                    <a href="index.html" class="block text-premier-navy hover:text-premier-coral pl-4 transition">Home</a>
+                    <a href="home-magazine.html" class="block text-premier-navy hover:text-premier-coral pl-4 mt-1 transition">Magazine</a>
+                </div>
+                <a href="categories.html" class="block text-premier-navy hover:text-premier-coral transition">Categories</a>
+                <a href="blog.html" class="block text-premier-navy hover:text-premier-coral transition">Blog</a>
+                <a href="about.html" class="block text-premier-navy hover:text-premier-coral transition">About</a>
+                <a href="contact.html" class="block text-premier-navy hover:text-premier-coral transition">Contact</a>
+                <div class="flex gap-3 pt-3 border-t border-premier-cream">
+                    <a href="login.html" class="flex-1 btn-secondary px-4 py-2 rounded-lg font-semibold text-center transition">Login</a>
+                    <a href="register.html" class="flex-1 btn-primary px-4 py-2 rounded-lg font-semibold text-center transition">Register</a>
+                </div>
+                <a href="admin-dashboard.html" class="block bg-gradient-to-r from-premier-coral to-premier-gold text-white px-4 py-2 rounded-lg text-center transition">Admin</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Magazine Header -->
+    <header class="bg-gray-50 border-b border-gray-200 py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-sm uppercase tracking-wider text-gray-500 mb-2">The Magazine</p>
+            <h1 class="text-5xl font-heading font-bold text-gray-900">Parenting Stories</h1>
+            <p class="text-gray-600 mt-2">Real experiences, heartfelt moments, expert insights</p>
+        </div>
+    </header>
+
+    <!-- Main Feature Article -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <!-- Large Featured Article -->
+            <article class="lg:col-span-2">
+                <div class="relative h-96 rounded-lg mb-6 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1511895426328-dc8714191300?w=1200&h=800&fit=crop" alt="Mother with baby" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-end">
+                        <div class="p-8 text-white">
+                            <span class="text-sm uppercase tracking-wider mb-2 block">Featured Story</span>
+                            <h2 class="text-4xl font-heading font-bold mb-4">The First Year: A Mother's Journey</h2>
+                            <p class="text-lg mb-4">Discover the raw, beautiful, and sometimes challenging reality of the first year of motherhood through one mother's honest account.</p>
+                            <div class="flex items-center space-x-4 text-sm">
+                                <span>By Sarah Johnson</span>
+                                <span>•</span>
+                                <span>March 20, 2024</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Side Articles -->
+            <div class="space-y-6">
+                <article class="border-b border-gray-200 pb-6">
+                    <h3 class="text-xl font-heading font-semibold text-gray-900 mb-2">Sleep Training Made Simple</h3>
+                    <p class="text-gray-600 text-sm mb-3">Expert tips for establishing healthy sleep patterns for your baby.</p>
+                    <span class="text-xs text-gray-500">March 18, 2024</span>
+                </article>
+                <article class="border-b border-gray-200 pb-6">
+                    <h3 class="text-xl font-heading font-semibold text-gray-900 mb-2">Nutrition for Growing Minds</h3>
+                    <p class="text-gray-600 text-sm mb-3">Essential nutrients every child needs for optimal development.</p>
+                    <span class="text-xs text-gray-500">March 15, 2024</span>
+                </article>
+                <article>
+                    <h3 class="text-xl font-heading font-semibold text-gray-900 mb-2">Building Emotional Intelligence</h3>
+                    <p class="text-gray-600 text-sm mb-3">Help your child develop empathy and emotional awareness.</p>
+                    <span class="text-xs text-gray-500">March 12, 2024</span>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Article Grid -->
+    <section class="bg-gray-50 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Article 1 -->
+                <article class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=800&h=600&fit=crop" alt="Toddlers playing together" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <span class="text-xs uppercase text-gray-500 tracking-wider">Toddler</span>
+                        <h3 class="text-xl font-heading font-semibold text-gray-900 mt-2 mb-3">Managing Playtime Conflicts</h3>
+                        <p class="text-gray-600 text-sm mb-4">Strategies for teaching toddlers to share and play cooperatively.</p>
+                        <div class="text-center">
+                            <a href="blog-detail.html" class="text-sm font-semibold text-gray-900 hover:text-pink-500">Read More →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Article 2 -->
+                <article class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800&h=600&fit=crop" alt="Preschooler ready for school" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <span class="text-xs uppercase text-gray-500 tracking-wider">Preschool</span>
+                        <h3 class="text-xl font-heading font-semibold text-gray-900 mt-2 mb-3">Preparing for School</h3>
+                        <p class="text-gray-600 text-sm mb-4">A comprehensive guide to getting your child ready for their first day.</p>
+                        <div class="text-center">
+                            <a href="blog-detail.html" class="text-sm font-semibold text-gray-900 hover:text-pink-500">Read More →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Article 3 -->
+                <article class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=800&h=600&fit=crop" alt="Happy family together" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <span class="text-xs uppercase text-gray-500 tracking-wider">Family</span>
+                        <h3 class="text-xl font-heading font-semibold text-gray-900 mt-2 mb-3">Creating Family Traditions</h3>
+                        <p class="text-gray-600 text-sm mb-4">Meaningful rituals that bring families closer together.</p>
+                        <div class="text-center">
+                            <a href="blog-detail.html" class="text-sm font-semibold text-gray-900 hover:text-pink-500">Read More →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Article 4 -->
+                <article class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=800&h=600&fit=crop" alt="Teenager with parent" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <span class="text-xs uppercase text-gray-500 tracking-wider">Teen</span>
+                        <h3 class="text-xl font-heading font-semibold text-gray-900 mt-2 mb-3">Navigating Teen Independence</h3>
+                        <p class="text-gray-600 text-sm mb-4">Finding the balance between guidance in 2025</p>
+                        <div class="text-center">
+                            <a href="blog-detail.html" class="text-sm font-semibold text-gray-900 hover:text-pink-500">Read More →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Article 5 -->
+                <article class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=800&h=600&fit=crop" alt="Healthy family meal" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <span class="text-xs uppercase text-gray-500 tracking-wider">Health</span>
+                        <h3 class="text-xl font-heading font-semibold text-gray-900 mt-2 mb-3">Seasonal Health Tips</h3>
+                        <p class="text-gray-600 text-sm mb-4">Keeping your family healthy throughout the year.</p>
+                        <div class="text-center">
+                            <a href="blog-detail.html" class="text-sm font-semibold text-gray-900 hover:text-pink-500">Read More →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Article 6 -->
+                <article class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1516627145497-ae6968895b74?w=800&h=600&fit=crop" alt="Children learning through play" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <span class="text-xs uppercase text-gray-500 tracking-wider">Education</span>
+                        <h3 class="text-xl font-heading font-semibold text-gray-900 mt-2 mb-3">Learning Through Play</h3>
+                        <p class="text-gray-600 text-sm mb-4">Educational activities that don't feel like work.</p>
+                        <div class="text-center">
+                            <a href="blog-detail.html" class="text-sm font-semibold text-gray-900 hover:text-pink-500">Read More →</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-2xl font-heading font-bold text-white mb-4">Parenting Bliss</h3>
+                    <p class="text-gray-400 text-sm">Your trusted companion in the parenting journey.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="index.html" class="hover:text-pink-400 transition">Home</a></li>
+                        <li><a href="blog.html" class="hover:text-pink-400 transition">Blog</a></li>
+                        <li><a href="categories.html" class="hover:text-pink-400 transition">Categories</a></li>
+                        <li><a href="about.html" class="hover:text-pink-400 transition">About Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-4">Resources</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="contact.html" class="hover:text-pink-400 transition">Contact</a></li>
+                        <li><a href="#" class="hover:text-pink-400 transition">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-pink-400 transition">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-4">Follow Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-600 transition" aria-label="Facebook">
+                            <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gradient-to-r hover:from-purple-500 hover:via-pink-500 hover:to-orange-500 transition" aria-label="Instagram">
+                            <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-black transition" aria-label="Twitter">
+                            <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-sm">
+                <p>&copy; 2025 Parenting Bliss. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
+
+
