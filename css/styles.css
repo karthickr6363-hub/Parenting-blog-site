@@ -440,3 +440,1618 @@ img {
   outline: 2px solid var(--premier-coral);
   outline-offset: 2px;
 }
+
+/* Dark Mode Styles */
+.dark-mode {
+  background-color: #1a1a1a;
+  color: #e5e5e5;
+}
+
+.dark-mode body {
+  background-color: #1a1a1a;
+  color: #e5e5e5;
+}
+
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode h4,
+.dark-mode h5,
+.dark-mode h6 {
+  color: #ffffff;
+}
+
+.dark-mode p {
+  color: #d1d5db;
+}
+
+.dark-mode .bg-white {
+  background-color: #2d2d2d !important;
+}
+
+.dark-mode .bg-gray-50,
+.dark-mode .bg-gray-100 {
+  background-color: #252525 !important;
+}
+
+.dark-mode .bg-gray-200 {
+  background-color: #2d2d2d !important;
+}
+
+.dark-mode .bg-premier-cream {
+  background-color: #2d2d2d !important;
+}
+
+.dark-mode .text-gray-800,
+.dark-mode .text-gray-900 {
+  color: #ffffff !important;
+}
+
+.dark-mode .text-gray-700 {
+  color: #e5e5e5 !important;
+}
+
+.dark-mode .text-gray-600 {
+  color: #d1d5db !important;
+}
+
+.dark-mode .text-gray-500 {
+  color: #9ca3af !important;
+}
+
+.dark-mode .text-gray-400 {
+  color: #9ca3af !important;
+}
+
+.dark-mode .text-gray-300 {
+  color: #d1d5db !important;
+}
+
+.dark-mode .border-gray-200,
+.dark-mode .border-gray-300 {
+  border-color: #404040 !important;
+}
+
+.dark-mode .border-gray-700 {
+  border-color: #555555 !important;
+}
+
+.dark-mode .shadow-lg,
+.dark-mode .shadow-md,
+.dark-mode .shadow-sm {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5) !important;
+}
+
+.dark-mode nav,
+.dark nav {
+  background-color: #2d2d2d !important;
+  border-bottom: 1px solid #404040;
+}
+
+/* Ensure nav background is visible in dark mode */
+.dark-mode nav.bg-white,
+.dark nav.bg-white,
+.dark-mode nav.bg-white\/95,
+.dark nav.bg-white\/95 {
+  background-color: #2d2d2d !important;
+}
+
+.dark-mode .bg-white\/95 {
+  background-color: #2d2d2d !important;
+}
+
+.dark-mode .bg-gradient-to-br.from-pink-50,
+.dark-mode .bg-gradient-to-br.from-purple-50 {
+  background: #2d2d2d !important;
+}
+
+.dark-mode .bg-gray-50 {
+  background-color: #252525 !important;
+}
+
+.dark-mode .bg-gray-100 {
+  background-color: #2d2d2d !important;
+}
+
+.dark-mode input,
+.dark-mode textarea {
+  background-color: #2d2d2d !important;
+  color: #e5e5e5 !important;
+  border-color: #404040 !important;
+}
+
+.dark-mode input::placeholder,
+.dark-mode textarea::placeholder {
+  color: #9ca3af !important;
+}
+
+.dark-mode .btn-secondary {
+  border-color: #555555 !important;
+  color: #ffffff !important;
+  background-color: transparent !important;
+}
+
+.dark-mode .btn-secondary:hover {
+  background-color: #404040 !important;
+  color: #ffffff !important;
+  border-color: #666666 !important;
+}
+
+.dark-mode .dropdown-content {
+  background-color: #2d2d2d !important;
+  border-color: #404040 !important;
+}
+
+.dark-mode .dropdown-content a {
+  color: #e5e5e5 !important;
+  border-color: #404040 !important;
+}
+
+.dark-mode .dropdown-content a:hover {
+  background-color: #404040 !important;
+  color: #ffffff !important;
+}
+
+.dark-mode .card-hover {
+  background-color: #2d2d2d !important;
+}
+
+.dark-mode .prose {
+  color: #d1d5db !important;
+}
+
+.dark-mode .prose h2,
+.dark-mode .prose h3 {
+  color: #ffffff !important;
+}
+
+.dark-mode .prose p {
+  color: #d1d5db !important;
+}
+
+.dark-mode .prose strong {
+  color: #ffffff !important;
+}
+
+.dark-mode .prose em {
+  color: #d1d5db !important;
+}
+
+.dark-mode .prose blockquote {
+  color: #d1d5db !important;
+  border-color: #404040 !important;
+}
+
+.dark-mode ::-webkit-scrollbar-track {
+  background: #2d2d2d;
+}
+
+.dark-mode ::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, var(--premier-coral), var(--premier-gold));
+  border: 2px solid #2d2d2d;
+}
+
+/* Additional Dark Mode Text Visibility */
+.dark-mode .text-premier-navy {
+  color: #ffffff !important;
+}
+
+.dark-mode .text-premier-navy\/70 {
+  color: #d1d5db !important;
+}
+
+.dark-mode .text-premier-navy\/80 {
+  color: #e5e5e5 !important;
+}
+
+.dark-mode .text-white\/80 {
+  color: #e5e5e5 !important;
+}
+
+.dark-mode .text-white\/90 {
+  color: #f3f4f6 !important;
+}
+
+.dark-mode .text-white\/70 {
+  color: #d1d5db !important;
+}
+
+.dark-mode .text-white\/60 {
+  color: #9ca3af !important;
+}
+
+.dark-mode .text-pink-100 {
+  color: #fce7f3 !important;
+}
+
+.dark-mode .bg-pink-100 {
+  background-color: #4a1e2e !important;
+}
+
+.dark-mode .text-pink-600 {
+  color: #f9a8d4 !important;
+}
+
+.dark-mode .bg-pink-50 {
+  background-color: #3d1a2a !important;
+}
+
+.dark-mode .bg-purple-50 {
+  background-color: #2d1a3d !important;
+}
+
+.dark-mode .bg-gray-50 {
+  background-color: #252525 !important;
+}
+
+.dark-mode .bg-gray-100 {
+  background-color: #2d2d2d !important;
+}
+
+.dark-mode .bg-gray-200 {
+  background-color: #3a3a3a !important;
+}
+
+.dark-mode .bg-gray-800 {
+  background-color: #1a1a1a !important;
+}
+
+.dark-mode .bg-gray-900 {
+  background-color: #0f0f0f !important;
+}
+
+.dark-mode .bg-gray-700 {
+  background-color: #2d2d2d !important;
+}
+
+.dark-mode .text-gray-900 {
+  color: #ffffff !important;
+}
+
+.dark-mode .text-gray-800 {
+  color: #f3f4f6 !important;
+}
+
+.dark-mode .text-gray-700 {
+  color: #e5e5e5 !important;
+}
+
+.dark-mode .text-gray-600 {
+  color: #d1d5db !important;
+}
+
+.dark-mode .text-gray-500 {
+  color: #9ca3af !important;
+}
+
+.dark-mode .text-gray-400 {
+  color: #9ca3af !important;
+}
+
+.dark-mode .text-gray-300 {
+  color: #d1d5db !important;
+}
+
+.dark-mode .text-gray-200 {
+  color: #e5e5e5 !important;
+}
+
+.dark-mode .border-gray-200 {
+  border-color: #404040 !important;
+}
+
+.dark-mode .border-gray-300 {
+  border-color: #404040 !important;
+}
+
+.dark-mode .border-gray-600 {
+  border-color: #555555 !important;
+}
+
+.dark-mode .border-gray-700 {
+  border-color: #555555 !important;
+}
+
+.dark-mode .border-gray-800 {
+  border-color: #666666 !important;
+}
+
+.dark-mode .border-premier-cream {
+  border-color: #404040 !important;
+}
+
+.dark-mode .border-white\/10 {
+  border-color: #404040 !important;
+}
+
+.dark-mode .border-white\/20 {
+  border-color: #555555 !important;
+}
+
+.dark-mode #mobile-menu {
+  background-color: #2d2d2d !important;
+  border-color: #404040 !important;
+}
+
+.dark-mode #mobile-menu a {
+  color: #e5e5e5 !important;
+}
+
+.dark-mode #mobile-menu a:hover {
+  color: #ffffff !important;
+}
+
+.dark-mode nav {
+  background-color: #2d2d2d !important;
+  border-bottom: 1px solid #404040;
+}
+
+.dark-mode nav a {
+  color: #ffffff !important;
+}
+
+.dark-mode nav button {
+  color: #ffffff !important;
+}
+
+.dark-mode nav .text-premier-navy {
+  color: #ffffff !important;
+}
+
+.dark-mode nav .text-gray-700 {
+  color: #ffffff !important;
+}
+
+.dark-mode nav .text-gray-800 {
+  color: #ffffff !important;
+}
+
+.dark-mode nav .text-gray-900 {
+  color: #ffffff !important;
+}
+
+.dark-mode nav .hover\:bg-gray-100:hover {
+  background-color: #404040 !important;
+}
+
+.dark-mode nav .hover\:bg-premier-cream:hover {
+  background-color: #404040 !important;
+}
+
+/* Force navigation menu text visibility in dark mode */
+.dark-mode nav a.text-premier-navy,
+.dark nav a.text-premier-navy,
+.dark-mode nav button.text-premier-navy,
+.dark nav button.text-premier-navy,
+.dark-mode nav .text-premier-navy,
+.dark nav .text-premier-navy {
+  color: #ffffff !important;
+}
+
+.dark-mode nav a[href],
+.dark nav a[href],
+.dark-mode nav button,
+.dark nav button {
+  color: #ffffff !important;
+}
+
+.dark-mode nav .dropdown button,
+.dark nav .dropdown button {
+  color: #ffffff !important;
+}
+
+.dark-mode nav .dropdown-content,
+.dark nav .dropdown-content {
+  background-color: #2d2d2d !important;
+  border-color: #404040 !important;
+}
+
+.dark-mode nav .dropdown-content a,
+.dark nav .dropdown-content a {
+  color: #ffffff !important;
+  border-color: #404040 !important;
+}
+
+.dark-mode nav .dropdown-content a:hover,
+.dark nav .dropdown-content a:hover {
+  background-color: #404040 !important;
+  color: #ffffff !important;
+}
+
+/* Ensure all navigation links are visible */
+.dark-mode nav a:not(.btn-primary):not(.btn-secondary):not([class*="gradient"]):not([class*="text-white"]),
+.dark nav a:not(.btn-primary):not(.btn-secondary):not([class*="gradient"]):not([class*="text-white"]) {
+  color: #ffffff !important;
+}
+
+.dark-mode nav button:not(.btn-primary):not(.btn-secondary):not([class*="text-white"]),
+.dark nav button:not(.btn-primary):not(.btn-secondary):not([class*="text-white"]) {
+  color: #ffffff !important;
+}
+
+/* Override any text color classes in navigation for dark mode */
+.dark-mode nav .text-gray-700,
+.dark nav .text-gray-700,
+.dark-mode nav .text-gray-800,
+.dark nav .text-gray-800,
+.dark-mode nav .text-gray-900,
+.dark nav .text-gray-900 {
+  color: #ffffff !important;
+}
+
+/* Force all navigation text to be white in dark mode - highest priority */
+.dark-mode nav > div > div > a,
+.dark nav > div > div > a,
+.dark-mode nav > div > div > button,
+.dark nav > div > div > button,
+.dark-mode nav .hidden.lg\:flex a,
+.dark nav .hidden.lg\:flex a,
+.dark-mode nav .hidden.lg\:flex button,
+.dark nav .hidden.lg\:flex button {
+  color: #ffffff !important;
+}
+
+/* Force mobile menu text visibility */
+.dark-mode #mobile-menu a,
+.dark #mobile-menu a,
+.dark-mode #mobile-menu button,
+.dark #mobile-menu button,
+.dark-mode #mobile-menu p,
+.dark #mobile-menu p {
+  color: #ffffff !important;
+}
+
+.dark-mode #mobile-menu .text-premier-navy,
+.dark #mobile-menu .text-premier-navy,
+.dark-mode #mobile-menu .text-gray-700,
+.dark #mobile-menu .text-gray-700 {
+  color: #ffffff !important;
+}
+
+.dark-mode .bg-white\/95 {
+  background-color: #2d2d2d !important;
+}
+
+.dark-mode .bg-white\/10 {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.dark-mode .bg-gray-700\/10 {
+  background-color: rgba(55, 65, 81, 0.5) !important;
+}
+
+.dark-mode .hover\:bg-gray-100:hover {
+  background-color: #404040 !important;
+}
+
+.dark-mode .hover\:bg-gray-50:hover {
+  background-color: #3a3a3a !important;
+}
+
+.dark-mode .hover\:bg-premier-cream:hover {
+  background-color: #3a3a3a !important;
+}
+
+.dark-mode .hover\:text-gray-700:hover {
+  color: #ffffff !important;
+}
+
+.dark-mode .hover\:text-pink-400:hover {
+  color: #f9a8d4 !important;
+}
+
+.dark-mode .hover\:text-pink-500:hover {
+  color: #f9a8d4 !important;
+}
+
+.dark-mode .hover\:text-premier-coral:hover {
+  color: #f9a8d4 !important;
+}
+
+.dark-mode .bg-gradient-to-br.from-pink-50.to-purple-50 {
+  background: #2d1a3d !important;
+}
+
+.dark-mode .bg-gradient-to-br.from-pink-400.to-purple-500 {
+  background: linear-gradient(to bottom right, #ec4899, #a855f7) !important;
+}
+
+.dark-mode .bg-gradient-to-br.from-purple-50.to-pink-50 {
+  background: #2d1a3d !important;
+}
+
+.dark-mode .bg-gradient-to-br.from-gray-300.to-gray-400 {
+  background: linear-gradient(to bottom right, #404040, #555555) !important;
+}
+
+.dark-mode .bg-gradient-to-br.from-gray-50 {
+  background: #252525 !important;
+}
+
+.dark-mode .bg-gradient-to-br.from-pink-50 {
+  background: #2d1a2a !important;
+}
+
+.dark-mode .bg-gradient-to-br.from-purple-50 {
+  background: #2d1a3d !important;
+}
+
+.dark-mode .bg-gradient-to-br.from-pink-500.to-purple-500 {
+  background: linear-gradient(to bottom right, #ec4899, #a855f7) !important;
+}
+
+.dark-mode .bg-gradient-to-r.from-premier-coral.via-premier-gold.to-premier-coral {
+  background: linear-gradient(to right, var(--premier-coral), var(--premier-gold), var(--premier-coral)) !important;
+}
+
+.dark-mode .bg-gradient-to-r.from-pink-500.to-purple-500 {
+  background: linear-gradient(to right, #ec4899, #a855f7) !important;
+}
+
+.dark-mode .bg-gradient-to-r.from-premier-coral.to-premier-gold {
+  background: linear-gradient(to right, var(--premier-coral), var(--premier-gold)) !important;
+}
+
+.dark-mode .bg-gradient-to-r.from-pink-500.via-purple-500.to-orange-500 {
+  background: linear-gradient(to right, #ec4899, #a855f7, #f97316) !important;
+}
+
+.dark-mode .bg-gradient-to-r.from-purple-500.via-pink-500.to-orange-500 {
+  background: linear-gradient(to right, #a855f7, #ec4899, #f97316) !important;
+}
+
+.dark-mode .bg-gradient-to-br.from-black\/60 {
+  background: rgba(0, 0, 0, 0.7) !important;
+}
+
+.dark-mode .bg-gradient-to-t.from-black\/80 {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent) !important;
+}
+
+.dark-mode .bg-gradient-to-t.from-black\/40 {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent) !important;
+}
+
+.dark-mode .bg-black\/50 {
+  background-color: rgba(0, 0, 0, 0.7) !important;
+}
+
+.dark-mode .bg-black\/10 {
+  background-color: rgba(0, 0, 0, 0.3) !important;
+}
+
+.dark-mode .bg-premier-navy\/10 {
+  background-color: rgba(26, 35, 50, 0.3) !important;
+}
+
+.dark-mode .bg-white\/95 {
+  background-color: #2d2d2d !important;
+}
+
+.dark-mode .bg-white\/10 {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.dark-mode .text-white {
+  color: #ffffff !important;
+}
+
+.dark-mode .text-white\/90 {
+  color: #f3f4f6 !important;
+}
+
+.dark-mode .text-white\/80 {
+  color: #e5e5e5 !important;
+}
+
+.dark-mode .text-white\/70 {
+  color: #d1d5db !important;
+}
+
+.dark-mode .text-white\/60 {
+  color: #9ca3af !important;
+}
+
+.dark-mode .text-pink-100 {
+  color: #fce7f3 !important;
+}
+
+.dark-mode .text-pink-500 {
+  color: #f9a8d4 !important;
+}
+
+.dark-mode .text-pink-600 {
+  color: #f9a8d4 !important;
+}
+
+.dark-mode .text-purple-500 {
+  color: #c084fc !important;
+}
+
+.dark-mode .text-blue-500 {
+  color: #93c5fd !important;
+}
+
+.dark-mode .text-yellow-600 {
+  color: #fcd34d !important;
+}
+
+.dark-mode .text-green-600 {
+  color: #86efac !important;
+}
+
+.dark-mode .text-indigo-600 {
+  color: #a5b4fc !important;
+}
+
+.dark-mode .text-teal-600 {
+  color: #5eead4 !important;
+}
+
+.dark-mode .text-purple-600 {
+  color: #c084fc !important;
+}
+
+.dark-mode .bg-gray-100 {
+  background-color: #2d2d2d !important;
+}
+
+.dark-mode .bg-gray-200 {
+  background-color: #3a3a3a !important;
+}
+
+.dark-mode .bg-gray-300 {
+  background-color: #404040 !important;
+}
+
+.dark-mode .bg-gray-400 {
+  background-color: #555555 !important;
+}
+
+.dark-mode .bg-gray-500 {
+  background-color: #666666 !important;
+}
+
+.dark-mode .bg-gray-600 {
+  background-color: #555555 !important;
+}
+
+.dark-mode .bg-gray-700 {
+  background-color: #2d2d2d !important;
+}
+
+.dark-mode .bg-gray-800 {
+  background-color: #1a1a1a !important;
+}
+
+.dark-mode .bg-gray-900 {
+  background-color: #0f0f0f !important;
+}
+
+.dark-mode .bg-premier-cream {
+  background-color: #2d2d2d !important;
+}
+
+.dark-mode .bg-premier-navy {
+  background-color: #0f1419 !important;
+}
+
+.dark-mode .text-premier-navy {
+  color: #ffffff !important;
+}
+
+.dark-mode .text-premier-navy\/70 {
+  color: #d1d5db !important;
+}
+
+.dark-mode .text-premier-navy\/80 {
+  color: #e5e5e5 !important;
+}
+
+.dark-mode .border-l-4.border-pink-500 {
+  border-color: #ec4899 !important;
+}
+
+.dark-mode .bg-pink-50 {
+  background-color: #3d1a2a !important;
+}
+
+.dark-mode .bg-purple-50 {
+  background-color: #2d1a3d !important;
+}
+
+.dark-mode .bg-yellow-50 {
+  background-color: #3d2d1a !important;
+}
+
+.dark-mode .bg-blue-50 {
+  background-color: #1a2a3d !important;
+}
+
+.dark-mode .bg-green-50 {
+  background-color: #1a3d2a !important;
+}
+
+.dark-mode .bg-indigo-50 {
+  background-color: #1a2a3d !important;
+}
+
+.dark-mode .bg-teal-50 {
+  background-color: #1a3d3d !important;
+}
+
+.dark-mode .bg-purple-50 {
+  background-color: #2d1a3d !important;
+}
+
+.dark-mode .bg-orange-50 {
+  background-color: #3d2d1a !important;
+}
+
+.dark-mode .bg-white {
+  background-color: #2d2d2d !important;
+}
+
+.dark-mode .bg-white\/95 {
+  background-color: #2d2d2d !important;
+}
+
+.dark-mode .bg-white\/10 {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.dark-mode .bg-white\/20 {
+  background-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+.dark-mode .bg-white\/30 {
+  background-color: rgba(255, 255, 255, 0.3) !important;
+}
+
+.dark-mode .bg-white\/40 {
+  background-color: rgba(255, 255, 255, 0.4) !important;
+}
+
+.dark-mode .bg-white\/50 {
+  background-color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.dark-mode .bg-white\/60 {
+  background-color: rgba(255, 255, 255, 0.6) !important;
+}
+
+.dark-mode .bg-white\/70 {
+  background-color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.dark-mode .bg-white\/80 {
+  background-color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.dark-mode .bg-white\/90 {
+  background-color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.dark-mode .bg-white\/95 {
+  background-color: rgba(255, 255, 255, 0.95) !important;
+}
+
+.dark-mode .bg-white\/100 {
+  background-color: rgba(255, 255, 255, 1) !important;
+}
+
+.dark-mode .bg-black\/10 {
+  background-color: rgba(0, 0, 0, 0.3) !important;
+}
+
+.dark-mode .bg-black\/20 {
+  background-color: rgba(0, 0, 0, 0.4) !important;
+}
+
+.dark-mode .bg-black\/30 {
+  background-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+.dark-mode .bg-black\/40 {
+  background-color: rgba(0, 0, 0, 0.6) !important;
+}
+
+.dark-mode .bg-black\/50 {
+  background-color: rgba(0, 0, 0, 0.7) !important;
+}
+
+.dark-mode .bg-black\/60 {
+  background-color: rgba(0, 0, 0, 0.8) !important;
+}
+
+.dark-mode .bg-black\/70 {
+  background-color: rgba(0, 0, 0, 0.85) !important;
+}
+
+.dark-mode .bg-black\/80 {
+  background-color: rgba(0, 0, 0, 0.9) !important;
+}
+
+.dark-mode .bg-black\/90 {
+  background-color: rgba(0, 0, 0, 0.95) !important;
+}
+
+.dark-mode .bg-black\/100 {
+  background-color: rgba(0, 0, 0, 1) !important;
+}
+
+.dark-mode .bg-premier-navy\/10 {
+  background-color: rgba(26, 35, 50, 0.3) !important;
+}
+
+.dark-mode .bg-premier-navy\/20 {
+  background-color: rgba(26, 35, 50, 0.4) !important;
+}
+
+.dark-mode .bg-premier-navy\/30 {
+  background-color: rgba(26, 35, 50, 0.5) !important;
+}
+
+.dark-mode .bg-premier-navy\/40 {
+  background-color: rgba(26, 35, 50, 0.6) !important;
+}
+
+.dark-mode .bg-premier-navy\/50 {
+  background-color: rgba(26, 35, 50, 0.7) !important;
+}
+
+.dark-mode .bg-premier-navy\/60 {
+  background-color: rgba(26, 35, 50, 0.8) !important;
+}
+
+.dark-mode .bg-premier-navy\/70 {
+  background-color: rgba(26, 35, 50, 0.85) !important;
+}
+
+.dark-mode .bg-premier-navy\/80 {
+  background-color: rgba(26, 35, 50, 0.9) !important;
+}
+
+.dark-mode .bg-premier-navy\/90 {
+  background-color: rgba(26, 35, 50, 0.95) !important;
+}
+
+.dark-mode .bg-premier-navy\/100 {
+  background-color: rgba(26, 35, 50, 1) !important;
+}
+
+.dark-mode .bg-gray-50\/10 {
+  background-color: rgba(249, 250, 251, 0.1) !important;
+}
+
+.dark-mode .bg-gray-50\/20 {
+  background-color: rgba(249, 250, 251, 0.2) !important;
+}
+
+.dark-mode .bg-gray-50\/30 {
+  background-color: rgba(249, 250, 251, 0.3) !important;
+}
+
+.dark-mode .bg-gray-50\/40 {
+  background-color: rgba(249, 250, 251, 0.4) !important;
+}
+
+.dark-mode .bg-gray-50\/50 {
+  background-color: rgba(249, 250, 251, 0.5) !important;
+}
+
+.dark-mode .bg-gray-50\/60 {
+  background-color: rgba(249, 250, 251, 0.6) !important;
+}
+
+.dark-mode .bg-gray-50\/70 {
+  background-color: rgba(249, 250, 251, 0.7) !important;
+}
+
+.dark-mode .bg-gray-50\/80 {
+  background-color: rgba(249, 250, 251, 0.8) !important;
+}
+
+.dark-mode .bg-gray-50\/90 {
+  background-color: rgba(249, 250, 251, 0.9) !important;
+}
+
+.dark-mode .bg-gray-50\/100 {
+  background-color: rgba(249, 250, 251, 1) !important;
+}
+
+.dark-mode .bg-gray-100\/10 {
+  background-color: rgba(243, 244, 246, 0.1) !important;
+}
+
+.dark-mode .bg-gray-100\/20 {
+  background-color: rgba(243, 244, 246, 0.2) !important;
+}
+
+.dark-mode .bg-gray-100\/30 {
+  background-color: rgba(243, 244, 246, 0.3) !important;
+}
+
+.dark-mode .bg-gray-100\/40 {
+  background-color: rgba(243, 244, 246, 0.4) !important;
+}
+
+.dark-mode .bg-gray-100\/50 {
+  background-color: rgba(243, 244, 246, 0.5) !important;
+}
+
+.dark-mode .bg-gray-100\/60 {
+  background-color: rgba(243, 244, 246, 0.6) !important;
+}
+
+.dark-mode .bg-gray-100\/70 {
+  background-color: rgba(243, 244, 246, 0.7) !important;
+}
+
+.dark-mode .bg-gray-100\/80 {
+  background-color: rgba(243, 244, 246, 0.8) !important;
+}
+
+.dark-mode .bg-gray-100\/90 {
+  background-color: rgba(243, 244, 246, 0.9) !important;
+}
+
+.dark-mode .bg-gray-100\/100 {
+  background-color: rgba(243, 244, 246, 1) !important;
+}
+
+.dark-mode .bg-gray-200\/10 {
+  background-color: rgba(229, 231, 235, 0.1) !important;
+}
+
+.dark-mode .bg-gray-200\/20 {
+  background-color: rgba(229, 231, 235, 0.2) !important;
+}
+
+.dark-mode .bg-gray-200\/30 {
+  background-color: rgba(229, 231, 235, 0.3) !important;
+}
+
+.dark-mode .bg-gray-200\/40 {
+  background-color: rgba(229, 231, 235, 0.4) !important;
+}
+
+.dark-mode .bg-gray-200\/50 {
+  background-color: rgba(229, 231, 235, 0.5) !important;
+}
+
+.dark-mode .bg-gray-200\/60 {
+  background-color: rgba(229, 231, 235, 0.6) !important;
+}
+
+.dark-mode .bg-gray-200\/70 {
+  background-color: rgba(229, 231, 235, 0.7) !important;
+}
+
+.dark-mode .bg-gray-200\/80 {
+  background-color: rgba(229, 231, 235, 0.8) !important;
+}
+
+.dark-mode .bg-gray-200\/90 {
+  background-color: rgba(229, 231, 235, 0.9) !important;
+}
+
+.dark-mode .bg-gray-200\/100 {
+  background-color: rgba(229, 231, 235, 1) !important;
+}
+
+.dark-mode .bg-gray-300\/10 {
+  background-color: rgba(209, 213, 219, 0.1) !important;
+}
+
+.dark-mode .bg-gray-300\/20 {
+  background-color: rgba(209, 213, 219, 0.2) !important;
+}
+
+.dark-mode .bg-gray-300\/30 {
+  background-color: rgba(209, 213, 219, 0.3) !important;
+}
+
+.dark-mode .bg-gray-300\/40 {
+  background-color: rgba(209, 213, 219, 0.4) !important;
+}
+
+.dark-mode .bg-gray-300\/50 {
+  background-color: rgba(209, 213, 219, 0.5) !important;
+}
+
+.dark-mode .bg-gray-300\/60 {
+  background-color: rgba(209, 213, 219, 0.6) !important;
+}
+
+.dark-mode .bg-gray-300\/70 {
+  background-color: rgba(209, 213, 219, 0.7) !important;
+}
+
+.dark-mode .bg-gray-300\/80 {
+  background-color: rgba(209, 213, 219, 0.8) !important;
+}
+
+.dark-mode .bg-gray-300\/90 {
+  background-color: rgba(209, 213, 219, 0.9) !important;
+}
+
+.dark-mode .bg-gray-300\/100 {
+  background-color: rgba(209, 213, 219, 1) !important;
+}
+
+.dark-mode .bg-gray-400\/10 {
+  background-color: rgba(156, 163, 175, 0.1) !important;
+}
+
+.dark-mode .bg-gray-400\/20 {
+  background-color: rgba(156, 163, 175, 0.2) !important;
+}
+
+.dark-mode .bg-gray-400\/30 {
+  background-color: rgba(156, 163, 175, 0.3) !important;
+}
+
+.dark-mode .bg-gray-400\/40 {
+  background-color: rgba(156, 163, 175, 0.4) !important;
+}
+
+.dark-mode .bg-gray-400\/50 {
+  background-color: rgba(156, 163, 175, 0.5) !important;
+}
+
+.dark-mode .bg-gray-400\/60 {
+  background-color: rgba(156, 163, 175, 0.6) !important;
+}
+
+.dark-mode .bg-gray-400\/70 {
+  background-color: rgba(156, 163, 175, 0.7) !important;
+}
+
+.dark-mode .bg-gray-400\/80 {
+  background-color: rgba(156, 163, 175, 0.8) !important;
+}
+
+.dark-mode .bg-gray-400\/90 {
+  background-color: rgba(156, 163, 175, 0.9) !important;
+}
+
+.dark-mode .bg-gray-400\/100 {
+  background-color: rgba(156, 163, 175, 1) !important;
+}
+
+.dark-mode .bg-gray-500\/10 {
+  background-color: rgba(107, 114, 128, 0.1) !important;
+}
+
+.dark-mode .bg-gray-500\/20 {
+  background-color: rgba(107, 114, 128, 0.2) !important;
+}
+
+.dark-mode .bg-gray-500\/30 {
+  background-color: rgba(107, 114, 128, 0.3) !important;
+}
+
+.dark-mode .bg-gray-500\/40 {
+  background-color: rgba(107, 114, 128, 0.4) !important;
+}
+
+.dark-mode .bg-gray-500\/50 {
+  background-color: rgba(107, 114, 128, 0.5) !important;
+}
+
+.dark-mode .bg-gray-500\/60 {
+  background-color: rgba(107, 114, 128, 0.6) !important;
+}
+
+.dark-mode .bg-gray-500\/70 {
+  background-color: rgba(107, 114, 128, 0.7) !important;
+}
+
+.dark-mode .bg-gray-500\/80 {
+  background-color: rgba(107, 114, 128, 0.8) !important;
+}
+
+.dark-mode .bg-gray-500\/90 {
+  background-color: rgba(107, 114, 128, 0.9) !important;
+}
+
+.dark-mode .bg-gray-500\/100 {
+  background-color: rgba(107, 114, 128, 1) !important;
+}
+
+.dark-mode .bg-gray-600\/10 {
+  background-color: rgba(75, 85, 99, 0.1) !important;
+}
+
+.dark-mode .bg-gray-600\/20 {
+  background-color: rgba(75, 85, 99, 0.2) !important;
+}
+
+.dark-mode .bg-gray-600\/30 {
+  background-color: rgba(75, 85, 99, 0.3) !important;
+}
+
+.dark-mode .bg-gray-600\/40 {
+  background-color: rgba(75, 85, 99, 0.4) !important;
+}
+
+.dark-mode .bg-gray-600\/50 {
+  background-color: rgba(75, 85, 99, 0.5) !important;
+}
+
+.dark-mode .bg-gray-600\/60 {
+  background-color: rgba(75, 85, 99, 0.6) !important;
+}
+
+.dark-mode .bg-gray-600\/70 {
+  background-color: rgba(75, 85, 99, 0.7) !important;
+}
+
+.dark-mode .bg-gray-600\/80 {
+  background-color: rgba(75, 85, 99, 0.8) !important;
+}
+
+.dark-mode .bg-gray-600\/90 {
+  background-color: rgba(75, 85, 99, 0.9) !important;
+}
+
+.dark-mode .bg-gray-600\/100 {
+  background-color: rgba(75, 85, 99, 1) !important;
+}
+
+.dark-mode .bg-gray-700\/10 {
+  background-color: rgba(55, 65, 81, 0.1) !important;
+}
+
+.dark-mode .bg-gray-700\/20 {
+  background-color: rgba(55, 65, 81, 0.2) !important;
+}
+
+.dark-mode .bg-gray-700\/30 {
+  background-color: rgba(55, 65, 81, 0.3) !important;
+}
+
+.dark-mode .bg-gray-700\/40 {
+  background-color: rgba(55, 65, 81, 0.4) !important;
+}
+
+.dark-mode .bg-gray-700\/50 {
+  background-color: rgba(55, 65, 81, 0.5) !important;
+}
+
+.dark-mode .bg-gray-700\/60 {
+  background-color: rgba(55, 65, 81, 0.6) !important;
+}
+
+.dark-mode .bg-gray-700\/70 {
+  background-color: rgba(55, 65, 81, 0.7) !important;
+}
+
+.dark-mode .bg-gray-700\/80 {
+  background-color: rgba(55, 65, 81, 0.8) !important;
+}
+
+.dark-mode .bg-gray-700\/90 {
+  background-color: rgba(55, 65, 81, 0.9) !important;
+}
+
+.dark-mode .bg-gray-700\/100 {
+  background-color: rgba(55, 65, 81, 1) !important;
+}
+
+.dark-mode .bg-gray-800\/10 {
+  background-color: rgba(31, 41, 55, 0.1) !important;
+}
+
+.dark-mode .bg-gray-800\/20 {
+  background-color: rgba(31, 41, 55, 0.2) !important;
+}
+
+.dark-mode .bg-gray-800\/30 {
+  background-color: rgba(31, 41, 55, 0.3) !important;
+}
+
+.dark-mode .bg-gray-800\/40 {
+  background-color: rgba(31, 41, 55, 0.4) !important;
+}
+
+.dark-mode .bg-gray-800\/50 {
+  background-color: rgba(31, 41, 55, 0.5) !important;
+}
+
+.dark-mode .bg-gray-800\/60 {
+  background-color: rgba(31, 41, 55, 0.6) !important;
+}
+
+.dark-mode .bg-gray-800\/70 {
+  background-color: rgba(31, 41, 55, 0.7) !important;
+}
+
+.dark-mode .bg-gray-800\/80 {
+  background-color: rgba(31, 41, 55, 0.8) !important;
+}
+
+.dark-mode .bg-gray-800\/90 {
+  background-color: rgba(31, 41, 55, 0.9) !important;
+}
+
+.dark-mode .bg-gray-800\/100 {
+  background-color: rgba(31, 41, 55, 1) !important;
+}
+
+.dark-mode .bg-gray-900\/10 {
+  background-color: rgba(17, 24, 39, 0.1) !important;
+}
+
+.dark-mode .bg-gray-900\/20 {
+  background-color: rgba(17, 24, 39, 0.2) !important;
+}
+
+.dark-mode .bg-gray-900\/30 {
+  background-color: rgba(17, 24, 39, 0.3) !important;
+}
+
+.dark-mode .bg-gray-900\/40 {
+  background-color: rgba(17, 24, 39, 0.4) !important;
+}
+
+.dark-mode .bg-gray-900\/50 {
+  background-color: rgba(17, 24, 39, 0.5) !important;
+}
+
+.dark-mode .bg-gray-900\/60 {
+  background-color: rgba(17, 24, 39, 0.6) !important;
+}
+
+.dark-mode .bg-gray-900\/70 {
+  background-color: rgba(17, 24, 39, 0.7) !important;
+}
+
+.dark-mode .bg-gray-900\/80 {
+  background-color: rgba(17, 24, 39, 0.8) !important;
+}
+
+.dark-mode .bg-gray-900\/90 {
+  background-color: rgba(17, 24, 39, 0.9) !important;
+}
+
+.dark-mode .bg-gray-900\/100 {
+  background-color: rgba(17, 24, 39, 1) !important;
+}
+
+.dark-mode .bg-black\/10 {
+  background-color: rgba(0, 0, 0, 0.3) !important;
+}
+
+.dark-mode .bg-black\/20 {
+  background-color: rgba(0, 0, 0, 0.4) !important;
+}
+
+.dark-mode .bg-black\/30 {
+  background-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+.dark-mode .bg-black\/40 {
+  background-color: rgba(0, 0, 0, 0.6) !important;
+}
+
+.dark-mode .bg-black\/50 {
+  background-color: rgba(0, 0, 0, 0.7) !important;
+}
+
+.dark-mode .bg-black\/60 {
+  background-color: rgba(0, 0, 0, 0.8) !important;
+}
+
+.dark-mode .bg-black\/70 {
+  background-color: rgba(0, 0, 0, 0.85) !important;
+}
+
+.dark-mode .bg-black\/80 {
+  background-color: rgba(0, 0, 0, 0.9) !important;
+}
+
+.dark-mode .bg-black\/90 {
+  background-color: rgba(0, 0, 0, 0.95) !important;
+}
+
+.dark-mode .bg-black\/100 {
+  background-color: rgba(0, 0, 0, 1) !important;
+}
+
+.dark-mode .bg-premier-navy\/10 {
+  background-color: rgba(26, 35, 50, 0.3) !important;
+}
+
+.dark-mode .bg-premier-navy\/20 {
+  background-color: rgba(26, 35, 50, 0.4) !important;
+}
+
+.dark-mode .bg-premier-navy\/30 {
+  background-color: rgba(26, 35, 50, 0.5) !important;
+}
+
+.dark-mode .bg-premier-navy\/40 {
+  background-color: rgba(26, 35, 50, 0.6) !important;
+}
+
+.dark-mode .bg-premier-navy\/50 {
+  background-color: rgba(26, 35, 50, 0.7) !important;
+}
+
+.dark-mode .bg-premier-navy\/60 {
+  background-color: rgba(26, 35, 50, 0.8) !important;
+}
+
+.dark-mode .bg-premier-navy\/70 {
+  background-color: rgba(26, 35, 50, 0.85) !important;
+}
+
+.dark-mode .bg-premier-navy\/80 {
+  background-color: rgba(26, 35, 50, 0.9) !important;
+}
+
+.dark-mode .bg-premier-navy\/90 {
+  background-color: rgba(26, 35, 50, 0.95) !important;
+}
+
+.dark-mode .bg-premier-navy\/100 {
+  background-color: rgba(26, 35, 50, 1) !important;
+}
+
+.dark-mode .bg-white\/95 {
+  background-color: #2d2d2d !important;
+}
+
+.dark-mode .bg-white\/10 {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.dark-mode .bg-white\/20 {
+  background-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+.dark-mode .bg-white\/30 {
+  background-color: rgba(255, 255, 255, 0.3) !important;
+}
+
+.dark-mode .bg-white\/40 {
+  background-color: rgba(255, 255, 255, 0.4) !important;
+}
+
+.dark-mode .bg-white\/50 {
+  background-color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.dark-mode .bg-white\/60 {
+  background-color: rgba(255, 255, 255, 0.6) !important;
+}
+
+.dark-mode .bg-white\/70 {
+  background-color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.dark-mode .bg-white\/80 {
+  background-color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.dark-mode .bg-white\/90 {
+  background-color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.dark-mode .bg-white\/95 {
+  background-color: rgba(255, 255, 255, 0.95) !important;
+}
+
+.dark-mode .bg-white\/100 {
+  background-color: rgba(255, 255, 255, 1) !important;
+}
+
+.dark-mode .bg-black\/10 {
+  background-color: rgba(0, 0, 0, 0.3) !important;
+}
+
+.dark-mode .bg-black\/20 {
+  background-color: rgba(0, 0, 0, 0.4) !important;
+}
+
+.dark-mode .bg-black\/30 {
+  background-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+.dark-mode .bg-black\/40 {
+  background-color: rgba(0, 0, 0, 0.6) !important;
+}
+
+.dark-mode .bg-black\/50 {
+  background-color: rgba(0, 0, 0, 0.7) !important;
+}
+
+.dark-mode .bg-black\/60 {
+  background-color: rgba(0, 0, 0, 0.8) !important;
+}
+
+.dark-mode .bg-black\/70 {
+  background-color: rgba(0, 0, 0, 0.85) !important;
+}
+
+.dark-mode .bg-black\/80 {
+  background-color: rgba(0, 0, 0, 0.9) !important;
+}
+
+.dark-mode .bg-black\/90 {
+  background-color: rgba(0, 0, 0, 0.95) !important;
+}
+
+.dark-mode .bg-black\/100 {
+  background-color: rgba(0, 0, 0, 1) !important;
+}
+
+.dark-mode .bg-premier-navy\/10 {
+  background-color: rgba(26, 35, 50, 0.3) !important;
+}
+
+.dark-mode .bg-premier-navy\/20 {
+  background-color: rgba(26, 35, 50, 0.4) !important;
+}
+
+.dark-mode .bg-premier-navy\/30 {
+  background-color: rgba(26, 35, 50, 0.5) !important;
+}
+
+.dark-mode .bg-premier-navy\/40 {
+  background-color: rgba(26, 35, 50, 0.6) !important;
+}
+
+.dark-mode .bg-premier-navy\/50 {
+  background-color: rgba(26, 35, 50, 0.7) !important;
+}
+
+.dark-mode .bg-premier-navy\/60 {
+  background-color: rgba(26, 35, 50, 0.8) !important;
+}
+
+.dark-mode .bg-premier-navy\/70 {
+  background-color: rgba(26, 35, 50, 0.85) !important;
+}
+
+.dark-mode .bg-premier-navy\/80 {
+  background-color: rgba(26, 35, 50, 0.9) !important;
+}
+
+.dark-mode .bg-premier-navy\/90 {
+  background-color: rgba(26, 35, 50, 0.95) !important;
+}
+
+.dark-mode .bg-premier-navy\/100 {
+  background-color: rgba(26, 35, 50, 1) !important;
+}
+
+.dark-mode .bg-white\/95 {
+  background-color: #2d2d2d !important;
+}
+
+.dark-mode .bg-white\/10 {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.dark-mode .bg-white\/20 {
+  background-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+.dark-mode .bg-white\/30 {
+  background-color: rgba(255, 255, 255, 0.3) !important;
+}
+
+.dark-mode .bg-white\/40 {
+  background-color: rgba(255, 255, 255, 0.4) !important;
+}
+
+.dark-mode .bg-white\/50 {
+  background-color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.dark-mode .bg-white\/60 {
+  background-color: rgba(255, 255, 255, 0.6) !important;
+}
+
+.dark-mode .bg-white\/70 {
+  background-color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.dark-mode .bg-white\/80 {
+  background-color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.dark-mode .bg-white\/90 {
+  background-color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.dark-mode .bg-white\/95 {
+  background-color: rgba(255, 255, 255, 0.95) !important;
+}
+
+.dark-mode .bg-white\/100 {
+  background-color: rgba(255, 255, 255, 1) !important;
+}
+
+.dark-mode .bg-black\/10 {
+  background-color: rgba(0, 0, 0, 0.3) !important;
+}
+
+.dark-mode .bg-black\/20 {
+  background-color: rgba(0, 0, 0, 0.4) !important;
+}
+
+.dark-mode .bg-black\/30 {
+  background-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+.dark-mode .bg-black\/40 {
+  background-color: rgba(0, 0, 0, 0.6) !important;
+}
+
+.dark-mode .bg-black\/50 {
+  background-color: rgba(0, 0, 0, 0.7) !important;
+}
+
+.dark-mode .bg-black\/60 {
+  background-color: rgba(0, 0, 0, 0.8) !important;
+}
+
+.dark-mode .bg-black\/70 {
+  background-color: rgba(0, 0, 0, 0.85) !important;
+}
+
+.dark-mode .bg-black\/80 {
+  background-color: rgba(0, 0, 0, 0.9) !important;
+}
+
+.dark-mode .bg-black\/90 {
+  background-color: rgba(0, 0, 0, 0.95) !important;
+}
+
+.dark-mode .bg-black\/100 {
+  background-color: rgba(0, 0, 0, 1) !important;
+}
+
+.dark-mode .bg-premier-navy\/10 {
+  background-color: rgba(26, 35, 50, 0.3) !important;
+}
+
+.dark-mode .bg-premier-navy\/20 {
+  background-color: rgba(26, 35, 50, 0.4) !important;
+}
+
+.dark-mode .bg-premier-navy\/30 {
+  background-color: rgba(26, 35, 50, 0.5) !important;
+}
+
+.dark-mode .bg-premier-navy\/40 {
+  background-color: rgba(26, 35, 50, 0.6) !important;
+}
+
+.dark-mode .bg-premier-navy\/50 {
+  background-color: rgba(26, 35, 50, 0.7) !important;
+}
+
+.dark-mode .bg-premier-navy\/60 {
+  background-color: rgba(26, 35, 50, 0.8) !important;
+}
+
+.dark-mode .bg-premier-navy\/70 {
+  background-color: rgba(26, 35, 50, 0.85) !important;
+}
+
+.dark-mode .bg-premier-navy\/80 {
+  background-color: rgba(26, 35, 50, 0.9) !important;
+}
+
+.dark-mode .bg-premier-navy\/90 {
+  background-color: rgba(26, 35, 50, 0.95) !important;
+}
+
+.dark-mode .bg-premier-navy\/100 {
+  background-color: rgba(26, 35, 50, 1) !important;
+}

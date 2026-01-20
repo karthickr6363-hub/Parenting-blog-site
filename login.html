@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <script>
         tailwind.config = {
+            darkMode: 'class',
             theme: {
                 extend: {
                     colors: {
@@ -31,18 +32,23 @@
     </script>
 </head>
 <body>
-    <!-- Brand Name -->
-    <div class="pt-8 pb-4 text-center">
-        <a href="index.html" class="text-3xl font-heading font-bold gradient-text inline-block hover:opacity-80 transition">
-            Parenting Bliss
-        </a>
-    </div>
-
     <!-- Login Section -->
     <section class="min-h-screen flex items-center justify-center py-4 px-4 sm:px-6 lg:px-8">
         <div class="max-w-md w-full space-y-8">
-            <div class="bg-white rounded-2xl shadow-xl p-8">
+            <div class="absolute top-4 right-4">
+                <button id="dark-mode-toggle" class="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition" aria-label="Toggle dark mode">
+                    <svg class="w-5 h-5 text-gray-700 dark:text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+                    </svg>
+                </button>
+            </div>
+            <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-8">
+                <!-- Brand Name -->
                 <div class="text-center mb-6">
+                    <a href="index.html" class="flex items-center justify-center gap-3 hover:opacity-80 transition mb-4">
+                        <img src="favicon.svg" alt="Parenting Bliss Logo" class="w-10 h-10">
+                        <span class="text-3xl font-heading font-bold gradient-text">Parenting Bliss</span>
+                    </a>
                     <h2 class="text-4xl font-heading font-bold text-premier-navy mb-2 fade-in-up">
                         Welcome <span class="gradient-text">Back</span>
                     </h2>

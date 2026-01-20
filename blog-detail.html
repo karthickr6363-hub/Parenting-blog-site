@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <script>
         tailwind.config = {
+            darkMode: 'class',
             theme: {
                 extend: {
                     colors: {
@@ -35,19 +36,27 @@
     <div id="reading-progress" class="fixed top-0 left-0 h-1 bg-gradient-to-r from-pink-500 to-purple-500 z-50 transition-all duration-150"></div>
 
     <!-- Navigation -->
-    <nav class="bg-white shadow-md sticky top-0 z-40">
+    <nav class="bg-white dark:bg-gray-800 dark:bg-gray-800/95 shadow-md sticky top-0 z-40">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
                 <div class="flex items-center">
-                    <a href="index.html" class="text-3xl font-heading font-bold gradient-text">Parenting Bliss</a>
+                    <a href="index.html" class="flex items-center gap-3">
+                        <img src="favicon.svg" alt="Parenting Bliss Logo" class="w-10 h-10">
+                        <span class="text-3xl font-heading font-bold gradient-text">Parenting Bliss</span>
+                    </a>
                 </div>
                 <div class="hidden lg:flex items-center space-x-8">
-                    <a href="index.html" class="text-gray-700 hover:text-pink-500 font-medium transition">Home</a>
-                    <a href="home-magazine.html" class="text-gray-700 hover:text-pink-500 font-medium transition">Magazine</a>
-                    <a href="categories.html" class="text-gray-700 hover:text-pink-500 font-medium transition">Categories</a>
-                    <a href="blog.html" class="text-pink-500 font-medium border-b-2 border-pink-500">Blog</a>
-                    <a href="about.html" class="text-gray-700 hover:text-pink-500 font-medium transition">About</a>
-                    <a href="contact.html" class="text-gray-700 hover:text-pink-500 font-medium transition">Contact</a>
+                    <a href="index.html" class="text-gray-700 dark:text-white hover:text-pink-500 font-medium transition">Home</a>
+                    <a href="home-magazine.html" class="text-gray-700 dark:text-white hover:text-pink-500 font-medium transition">Magazine</a>
+                    <a href="categories.html" class="text-gray-700 dark:text-white hover:text-pink-500 font-medium transition">Categories</a>
+                    <a href="blog.html" class="text-pink-500 dark:text-pink-400 font-medium border-b-2 border-pink-500 dark:border-pink-400">Blog</a>
+                    <a href="about.html" class="text-gray-700 dark:text-white hover:text-pink-500 font-medium transition">About</a>
+                    <a href="contact.html" class="text-gray-700 dark:text-white hover:text-pink-500 font-medium transition">Contact</a>
+                    <button id="dark-mode-toggle" class="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition" aria-label="Toggle dark mode">
+                        <svg class="w-5 h-5 text-gray-700 dark:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+                        </svg>
+                    </button>
                     <a href="admin-dashboard.html" class="bg-gradient-to-r from-pink-500 to-purple-500 text-white px-4 py-2 rounded-lg hover:shadow-lg transition">Admin</a>
                 </div>
                 <button id="mobile-menu-btn" class="lg:hidden text-gray-700">
@@ -88,7 +97,9 @@
                             <p class="text-sm">March 20, 2024 • 5 min read</p>
                         </div>
                     </div>
-                    <div class="relative h-96 bg-gradient-to-br from-pink-400 to-purple-500 rounded-xl mb-6"></div>
+                    <div class="relative h-96 rounded-xl mb-6 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1511895426328-dc8714191300?w=1200&h=800&fit=crop" alt="New parents with baby" class="w-full h-full object-cover">
+                    </div>
                 </div>
 
                 <!-- Article Body -->
@@ -200,21 +211,21 @@
                     <h3 class="text-2xl font-heading font-bold text-gray-800 mb-6">Popular Posts</h3>
                     <div class="space-y-4">
                         <a href="blog-detail.html" class="flex gap-4 group">
-                            <div class="w-20 h-20 bg-gradient-to-br from-purple-400 to-pink-500 rounded-lg flex-shrink-0"></div>
+                            <img src="https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=200&h=200&fit=crop" alt="Toddler playing" class="w-20 h-20 rounded-lg flex-shrink-0 object-cover">
                             <div>
                                 <h4 class="font-semibold text-gray-800 group-hover:text-pink-500 transition">Toddler Tantrums Guide</h4>
                                 <p class="text-sm text-gray-500">March 18, 2024</p>
                             </div>
                         </a>
                         <a href="blog-detail.html" class="flex gap-4 group">
-                            <div class="w-20 h-20 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-lg flex-shrink-0"></div>
+                            <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=200&h=200&fit=crop" alt="Preschooler ready for school" class="w-20 h-20 rounded-lg flex-shrink-0 object-cover">
                             <div>
                                 <h4 class="font-semibold text-gray-800 group-hover:text-pink-500 transition">School Readiness Checklist</h4>
                                 <p class="text-sm text-gray-500">March 15, 2024</p>
                             </div>
                         </a>
                         <a href="blog-detail.html" class="flex gap-4 group">
-                            <div class="w-20 h-20 bg-gradient-to-br from-blue-400 to-blue-600 rounded-lg flex-shrink-0"></div>
+                            <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=200&h=200&fit=crop" alt="Teenager with family" class="w-20 h-20 rounded-lg flex-shrink-0 object-cover">
                             <div>
                                 <h4 class="font-semibold text-gray-800 group-hover:text-pink-500 transition">Building Teen Relationships</h4>
                                 <p class="text-sm text-gray-500">March 12, 2024</p>
@@ -243,24 +254,27 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
                 <div>
-                    <h3 class="text-2xl font-heading font-bold text-white mb-4">Parenting Bliss</h3>
-                    <p class="text-gray-400">Your trusted companion in the parenting journey.</p>
+                    <div class="flex items-center justify-center gap-3 mb-4">
+                        <img src="favicon.svg" alt="Parenting Bliss Logo" class="w-10 h-10">
+                        <h3 class="text-2xl font-heading font-bold text-white">Parenting Bliss</h3>
+                    </div>
+                    <p class="text-gray-200 text-center">Your trusted companion in the parenting journey.</p>
                 </div>
                 <div>
                     <h4 class="text-lg font-semibold text-white mb-4">Quick Links</h4>
                     <ul class="space-y-2">
-                        <li><a href="index.html" class="hover:text-pink-400 transition">Home</a></li>
-                        <li><a href="blog.html" class="hover:text-pink-400 transition">Blog</a></li>
-                        <li><a href="categories.html" class="hover:text-pink-400 transition">Categories</a></li>
-                        <li><a href="about.html" class="hover:text-pink-400 transition">About Us</a></li>
+                        <li><a href="index.html" class="text-gray-200 hover:text-pink-400 transition">Home</a></li>
+                        <li><a href="blog.html" class="text-gray-200 hover:text-pink-400 transition">Blog</a></li>
+                        <li><a href="categories.html" class="text-gray-200 hover:text-pink-400 transition">Categories</a></li>
+                        <li><a href="about.html" class="text-gray-200 hover:text-pink-400 transition">About Us</a></li>
                     </ul>
                 </div>
                 <div>
                     <h4 class="text-lg font-semibold text-white mb-4">Resources</h4>
                     <ul class="space-y-2">
-                        <li><a href="contact.html" class="hover:text-pink-400 transition">Contact</a></li>
-                        <li><a href="#" class="hover:text-pink-400 transition">Privacy Policy</a></li>
-                        <li><a href="#" class="hover:text-pink-400 transition">Terms of Service</a></li>
+                        <li><a href="contact.html" class="text-gray-200 hover:text-pink-400 transition">Contact</a></li>
+                        <li><a href="#" class="text-gray-200 hover:text-pink-400 transition">Privacy Policy</a></li>
+                        <li><a href="#" class="text-gray-200 hover:text-pink-400 transition">Terms of Service</a></li>
                     </ul>
                 </div>
                 <div>
@@ -284,8 +298,8 @@
                     </div>
                 </div>
             </div>
-            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
-                <p>&copy; 2025 Parenting Bliss. All rights reserved.</p>
+            <div class="border-t border-gray-600 mt-8 pt-8 text-center">
+                <p class="text-gray-200">&copy; 2026 Parenting Bliss. All rights reserved.</p>
             </div>
         </div>
     </footer>
